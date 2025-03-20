@@ -3,6 +3,7 @@ author: Alberto Perdomo
 pubDatetime: 2024-09-08T20:58:52.737Z
 modDatetime: 2025-03-09T09:24:07.841Z
 title: How to add LaTeX Equations in Astro blog posts
+draft: true
 tags:
   - docs
 description: Learn how to add LaTeX equations in Astro blog posts using Markdown, KaTeX, and remark/rehype plugins.
@@ -107,9 +108,9 @@ And _voilà_, this setup allows you to write LaTeX equations in your Markdown fi
 
 Inline equations are written between single dollar signs `$...$`. Here are some examples:
 
-1. The famous mass-energy equivalence formula: `$E = mc^2$`
-2. The quadratic formula: `$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$`
-3. Euler's identity: `$e^{i\pi} + 1 = 0$`
+1. The famous mass-energy equivalence formula: $E = mc^2$
+2. The quadratic formula: $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+3. Euler's identity: $e^{i\pi} + 1 = 0$
 
 ---
 
@@ -117,21 +118,22 @@ Inline equations are written between single dollar signs `$...$`. Here are some 
 
 For more complex equations or when you want the equation to be displayed on its own line, use double dollar signs `$$...$$`:
 
+The Pythagorean theorem:
+
+$$
+a^2 + b^2 = c^2
+$$
+
 The Gaussian integral:
 
-```bash
 $$ \int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi} $$
-```
 
 The definition of the Riemann zeta function:
 
-```bash
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} $$
-```
 
 Maxwell's equations in differential form:
 
-```bash
 $$
 \begin{aligned}
 \nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \\
@@ -140,7 +142,10 @@ $$
 \nabla \times \mathbf{B} &= \mu_0\left(\mathbf{J} + \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\right)
 \end{aligned}
 $$
-```
+
+The famous Schrödinger equation:
+
+$$ i\hbar\frac{\partial}{\partial t} \Psi(\mathbf{r}, t) = \left[ -\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r}, t) \right] \Psi(\mathbf{r}, t) $$
 
 ---
 

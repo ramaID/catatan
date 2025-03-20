@@ -7,6 +7,7 @@ import IconFacebook from "@/assets/icons/IconFacebook.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
 import { SITE } from "@/config";
+import type { GiscusProps } from "@giscus/react";
 
 export const LOCALE = {
   lang: "en", // html lang code. Set this empty and default will be "en"
@@ -16,25 +17,25 @@ export const LOCALE = {
 export const SOCIALS = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/ramaid/catatan",
     linkTitle: ` ${SITE.title} on Github`,
     icon: IconGitHub,
   },
   {
     name: "X",
-    href: "https://x.com/username",
+    href: "https://x.com/ramageek",
     linkTitle: `${SITE.title} on X`,
     icon: IconBrandX,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
+    href: "https://www.linkedin.com/in/ramageek/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:rama@qisthi.dev",
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
   },
@@ -78,3 +79,16 @@ export const SHARE_LINKS = [
     icon: IconMail,
   },
 ] as const;
+
+export const GISCUS: GiscusProps = {
+  repo: "ramaid/catatan",
+  repoId: "R_kgDOOLj3dA",
+  category: "General",
+  categoryId: "DIC_kwDOOLj3dM4CoQcG",
+  mapping: "pathname",
+  reactionsEnabled: "0",
+  emitMetadata: "0",
+  inputPosition: "bottom",
+  lang: "en",
+  loading: "lazy",
+};
